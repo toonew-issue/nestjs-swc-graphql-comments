@@ -9,12 +9,15 @@ import { AppService } from './app.service';
 import { AuthorResolver } from './author/author.resolver';
 import { AuthorService } from './author/service/author.service';
 import { PostService } from './author/service/post.service';
+import metadata from './metadata';
 
 @Module({
   imports: [
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
+
+      metadata,
     }),
   ],
   controllers: [AppController],
