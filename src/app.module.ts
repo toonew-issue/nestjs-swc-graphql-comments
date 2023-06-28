@@ -9,6 +9,7 @@ import { AppService } from './app.service';
 import { AuthorResolver } from './author/author.resolver';
 import { AuthorService } from './author/service/author.service';
 import { PostService } from './author/service/post.service';
+
 import metadata from './metadata';
 
 @Module({

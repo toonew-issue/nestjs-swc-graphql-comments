@@ -1,20 +1,5 @@
 /* eslint-disable */
 export default async () => {
-  const t = {};
-  return {
-    '@nestjs/graphql': {
-      models: [
-        [
-          import('../D:/code/node-tx/nestjs-study/src/author/model/post.model'),
-          { Post: {} },
-        ],
-        [
-          import(
-            '../D:/code/node-tx/nestjs-study/src/author/model/author.model'
-          ),
-          { Author: { id: { type: () => Number, description: 'Test' } } },
-        ],
-      ],
-    },
-  };
+    const t = {};
+    return { "@nestjs/graphql": { "models": [[import("./author/model/post.model"), { "Post": {} }], [import("./author/model/author.model"), { "Author": { id: { type: () => Number, description: "Test" } } }]] } };
 };

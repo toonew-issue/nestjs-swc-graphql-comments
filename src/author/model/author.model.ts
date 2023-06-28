@@ -4,10 +4,10 @@ import { Post } from './post.model';
 
 @ObjectType()
 export class Author {
-  // @Field((type) => Int)
   /**
    * Test
    */
+  // @Field((type) => Int)
   id: number;
 
   @Field({ nullable: true })
