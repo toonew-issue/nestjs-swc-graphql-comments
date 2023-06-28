@@ -9,12 +9,10 @@ type Post {
 }
 
 type Author {
+  id: Int!
   firstName: String
   lastName: String
   posts: [Post!]!
-
-  """Test"""
-  id: Float!
 }
 
 type Query {

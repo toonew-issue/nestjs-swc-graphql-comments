@@ -7,7 +7,7 @@ export class Author {
   /**
    * Test
    */
-  // @Field((type) => Int)
+  @Field((type) => Int)
   id: number;
 
   @Field({ nullable: true })
