@@ -9,6 +9,7 @@ type Post {
 }
 
 type Author {
+  """Test"""
   id: Int!
   firstName: String
   lastName: String
