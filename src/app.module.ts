@@ -24,7 +24,8 @@ import metadata from './metadata';
   controllers: [AppController],
   providers: [
     AppService,
-    // tet
+
+    // code first
     AuthorResolver,
     AuthorService,
     PostService,
