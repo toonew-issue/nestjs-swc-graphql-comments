@@ -1,5 +1,8 @@
 {
   "sourceMaps": "inline",
+  "env":{
+    "debug":true
+  },
   "jsc": {
     "preserveAllComments": true
   }
