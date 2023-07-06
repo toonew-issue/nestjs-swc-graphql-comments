@@ -6,10 +6,10 @@ import { GraphQLModule } from '@nestjs/graphql';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { AuthorController } from './author/author.controller';
 import { AuthorResolver } from './author/author.resolver';
 import { AuthorService } from './author/service/author.service';
 import { PostService } from './author/service/post.service';
-
 import metadata from './metadata';
 
 @Module({
@@ -21,7 +21,7 @@ import metadata from './metadata';
       metadata,
     }),
   ],
-  controllers: [AppController],
+  controllers: [AppController, AuthorController],
   providers: [
     AppService,
 
